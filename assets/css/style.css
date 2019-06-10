@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+
+.btn {
+    background-color: rgb(211, 160, 31);
+    margin: 5px;
+    border: none;
+    justify-content: center;
+}
+
+
+#questions {
+
+}
+
+
+#timer {
+    text-align: center;
+}
+
+
+
