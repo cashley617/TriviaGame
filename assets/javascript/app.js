@@ -5,41 +5,50 @@ $(document).ready(function () {
     let counter = 30;
 
     let triviaQuestions = {
-        questions: [
-            {
-            question: "Which account allows you to withdraw your contributions both tax and penalty free, at any time?",
-            options: [
-                "Traditional IRA",
-                "Step-Up IRA",
-                "Roth IRA",
-                "Tax-Free IRA"
-            ],
-            id: "question-one",
-            realAnswer: 2
-            },
-            {
-            question: "The NAV is the price of a ________",
-            options: ["Stock", "Bond", "Portfolio", "Mutual Fund"],
-            id: "question-two",
-            realAnswer: 3
-            },
-            {
-            question: "When a private company first sells shares of stock to the public, this process is known as an _______",
-            options: ["IBO", "IPO", "IPA", "IRA"],
-            id: "question-three",
-            realAnswer: 1
-            },
-            {
-            question: "You can purchase stock by purchasing:",
-            options: ["Shares", "Dollar Values", "Shares and Dollar Values"],
+      questions: [
+        {
+          question:
+            "Which account allows you to withdraw your contributions both tax and penalty free, at any time?",
+          options: [
+            "   Traditional IRA    ",
+            "   Step-Up IRA    ",
+            "   Roth IRA   ",
+            "   Tax-Free IRA   "
+          ],
+          id: "question-one",
+          realAnswer: 2
+        },
+        {
+          question: "The NAV is the price of a ________",
+          options: ["   Stock   ", "    Bond    ", "    Portfolio   ", "    Mutual Fund "],
+          id: "question-two",
+          realAnswer: 3
+        },
+        {
+          question:
+            "When a private company first sells shares of stock to the public, this process is known as an _______",
+          options: ["   IBO ", "    IPO ", "    IPA ", "    IRA "],
+          id: "question-three",
+          realAnswer: 1
+        },
+        {
+          question: "You can only purchase stock by purchasing:",
+          options: ["   Shares  ", "    Dollar Values   ", "    Shares and Dollar Values    "],
+          id: "question-four",
+          realAnswer: 0
+        },
+        {
+            question: "You can only place an 'exchange order' on which security?",
+            options: ["   Mutual Fund  ", "    Stock   ", "    ETF    "],
             id: "question-four",
             realAnswer: 0
-            }
-        ]
+        }
+      ]
     };
 
 
     $(".startGame").on("click", function () {
+        $('.fartPot').hide();
         $(".divWrapper").show();
         $(this).hide();
         run();
@@ -105,8 +114,6 @@ $(document).ready(function () {
     // };
 
     function checkAnswers() {
-        // let resultsHTML = "";
-        // let guessedAnswers = [];
         let correct = 0;
         let incorrect = 0;
         let unAnswered = 0;
@@ -122,7 +129,7 @@ $(document).ready(function () {
                 }
             }
         }
-        $('.results').html('correct: ' + correct + "<br>" + 'incorrect: ' + incorrect + "<br>" + 'unanswered: ' + unAnswered);
+        $('.results').html('Number Correct: ' + correct + "<br>" + 'Times to Try Again: ' + incorrect + "<br>" + 'Number Skipped: ' + unAnswered);
     };
 
 

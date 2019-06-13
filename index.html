@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trivia</title>
 
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    
     <script src="https://code.jquery.com/jquery.js"></script>
 
-    
+    <title>Trivia Trivia</title>
 </head>
+
 <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Trivial Trivia!</h1>
-        </div>
+
+    <h1 class='header'>Trivial Trivias!</h1>
+
+    <button class='startGame'>Click Here to Play!</button>
+
+    <div class='fartPot'>
+        <iframe src="https://giphy.com/embed/xUPGcuZ4ovlt1yYhR6" width="380" height="380" frameBorder="0" class="giphy-embed"
+        allowFullScreen></iframe>
+        <p><a href="https://giphy.com/gifs/fart-irish-poot-xUPGcuZ4ovlt1yYhR6">via GIPHY</a></p>
     </div>
 
-    <div id="timer"></div>
+    <div class='divWrapper'>
+        <!-- Timer Counting Down -->
+        <div class='timer' id='timeLeft'></div>
+        <!-- Questions Div -->
+        <div class='form' id='questionsSection'></div>
 
-    <div>
-        <button id="startButton" type="button" class="btn btn-info">Click Me To Start</button>
+        <button id='endButton'>Check My Work!</button>
+
     </div>
+    <!-- Time's Up Message -->
+    <div class='message' id='messageDiv'></div>
+    <!-- Game Results -->
+    <div class='results'></div>
 
-    <div id="question"></div>
-    <div id="options"></div>
-    <div id="timeUp"></div>
-
-
-
-
+    <button id='thanks' onclick='window.location.href = "https://www.youtube.com/watch?v=A4kpVO56OBU"'>Free Financial Planning Resources</div>
 
 
-<script src="./assets/javascript/app.js"></script>
-
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type='text/javascript' src='assets/javascript/app.js'></script>
 </body>
+
 </html>

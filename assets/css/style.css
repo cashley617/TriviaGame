@@ -1,25 +1,45 @@
 body {
-    background-color: lightblue;
+    background-color: lightgray;
     text-align: center;
 }
 
+.fartPot {
+    margin-top: 80px;
+}
 
+.form {
+    margin: 30px;
+}
 
-.btn {
-    background-color: rgb(211, 160, 31);
-    margin: 5px;
-    border: none;
+.header {
+    font-size: 70px;
+}
+
+.results {
+    margin: 20px;
+}
+
+.startGame, #endButton {
+    background-color: black;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
     justify-content: center;
 }
 
-
-#questions {
-
+#messageDiv {
+    font-size: 24px;
+    background-color: white;
 }
 
+#questionOne {
+    margin: 20px;
+}
 
-#timer {
+#timeLeft {
     text-align: center;
+    background-color: white;
 }
 
 
